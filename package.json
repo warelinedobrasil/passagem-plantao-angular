@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "publish": "npm run build && npx vercel --prod dist/passagem-plantao-angular --confirm"
   },
   "prettier": {
     "printWidth": 100,
