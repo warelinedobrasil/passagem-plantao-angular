@@ -7,7 +7,7 @@
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy:gh": "ng build --configuration production --base-href '/passagem-plantao-angular/' --output-path dist && npx angular-cli-ghpages --dir=dist"
+    "deploy:gh": "ng build --configuration production --base-href '/passagem-plantao-angular/' && npx angular-cli-ghpages --dir=dist/passagem-plantao-angular/browser"
   },
   "prettier": {
     "printWidth": 100,
