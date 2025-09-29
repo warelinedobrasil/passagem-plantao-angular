@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.sidebar-left, .sidebar-right {
+  background: #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+}

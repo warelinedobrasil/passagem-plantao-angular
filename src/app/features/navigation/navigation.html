@@ -1,0 +1,12 @@
+<nav class="navigation">
+  <button class="menu-btn" (click)="patientPopover.toggle()">☰</button>
+    <popover-pacientes-plantao #patientPopover></popover-pacientes-plantao>
+  
+  <button class="nav-btn" (click)="prev()" [disabled]="currentIndex === 0">←</button>
+  
+  <div class="title">
+    Paciente {{ currentIndex + 1 }} de {{ patients.length }}
+  </div>
+  
+  <button class="nav-btn" (click)="next()" [disabled]="currentIndex === patients.length - 1">→</button>
+</nav>

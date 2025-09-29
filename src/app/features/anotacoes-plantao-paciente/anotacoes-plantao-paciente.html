@@ -1,0 +1,9 @@
+<div class="annotations">
+  <h4>Anotações do plantão</h4>
+  <ul *ngIf="annotations.length > 0; else vazio">
+    <li *ngFor="let a of annotations">
+      <strong>[{{ a.timestamp }}] ({{ a.type }})</strong> {{ a.text }}
+    </li>
+  </ul>
+  <ng-template #vazio><p>Nenhuma anotação registrada.</p></ng-template>
+</div>

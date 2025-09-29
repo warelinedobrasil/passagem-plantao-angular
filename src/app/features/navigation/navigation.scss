@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ccc;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.menu-btn, .nav-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+}

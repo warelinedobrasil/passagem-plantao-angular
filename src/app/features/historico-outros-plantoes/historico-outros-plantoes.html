@@ -1,0 +1,9 @@
+<div class="history">
+  <h4>Histórico de plantões</h4>
+  <ul *ngIf="history.length > 0; else vazio">
+    <li *ngFor="let h of history">
+      <strong>{{ h.date }}:</strong> {{ h.summary }}
+    </li>
+  </ul>
+  <ng-template #vazio><p>Nenhum histórico encontrado.</p></ng-template>
+</div>

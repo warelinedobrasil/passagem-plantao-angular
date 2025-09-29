@@ -1,0 +1,13 @@
+<div class="popover-container">
+  <!-- Popover flutuante -->
+  <div class="popover" *ngIf="visible">
+    <h4>Pacientes do plantão</h4>
+    <ul>
+      <li *ngFor="let p of patients"
+          [class.active]="p.id === currentId"
+          (click)="selectPatient(p.id)">
+        {{ p.name }} (Leito {{ p.bed }})
+      </li>
+    </ul>
+  </div>
+</div>
