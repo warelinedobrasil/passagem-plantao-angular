@@ -7,7 +7,7 @@
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "publish": "npm run build && npx vercel --prod dist/passagem-plantao-angular --confirm"
+    "deploy:gh": "ng build --configuration production --base-href '/passagem-plantao-angular/' --output-path dist && npx angular-cli-ghpages --dir=dist"
   },
   "prettier": {
     "printWidth": 100,
